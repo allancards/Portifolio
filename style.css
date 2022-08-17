@@ -1,0 +1,293 @@
+/*
+font-family: 'Merriweather Sans', sans-serif;
+*/ 
+#finally{
+    color:var(--color-text);
+    font-family: var(--family-text);
+    display: flex;
+    width: 400px;
+    align-items: center;
+    margin: 800px 0 0 300px;
+   
+}
+p{
+    color:var(--color-text);
+    font-family: var(--family-text);
+
+}
+:root{
+    --color-text:#837E9F;
+    --background-card:#302F3D;
+    --family-text: 'Merriweather Sans', sans-serif;
+    --shadow:rgb(28, 27, 27);
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #22212c;
+    display: flex;
+    
+
+}
+.cardProfile{
+    background-color: var(--background-card);
+    width:80%;
+    margin:50px 10px 30px 50px;
+    border-radius: 20px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow:  3px 3px rgb(28, 27, 27);
+
+    
+
+}
+.cardProfile span, h3{
+    font-family: var(--family-text);
+    color:var(--color-text);
+
+}
+.cardProfile img{
+    width: 150px;
+    height:150px;
+    border-radius: 300px;
+
+    margin-bottom: 20px;
+    border: #00FF00 solid;
+
+}
+
+span{
+    font-size: 10px;
+    margin-top:10px;
+    color:var(--color-text);
+    font-family:var(--family-text);
+}
+
+.contact{
+    width:80%;
+    background-color: var(--background-card);
+    margin:0 0 0 50px;
+    border-radius: 20px;
+    padding:20px;
+    
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 3px 3px var(--shadow);
+   
+
+}
+.contact img{
+    
+    color:var(--color-text);
+    margin-bottom: 20px;
+    margin-right:30px;
+}
+.contact span{
+    font-size: 12px;
+
+}
+.contact #location, #company, #github, #linkedin, #twiter, #blog, #email{
+    display: flex;
+}
+
+.tecnologias{
+    background-color: var(--background-card);
+    width:80%;
+    margin:30px 40px 0 50px;
+
+    padding: 20px;
+    border-radius: 20px;
+    
+    box-shadow:  3px 3px var(--shadow);
+
+}
+.tecnologias #tec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:10px 0 10px 10px;
+
+
+    
+}
+.tecnologias #tec #js, #git, #css, #react, #gitHub, #elixir, #html, #node, #rnative{
+    display: flex;
+    margin:10px;
+    
+    background-color:#CB92B1;
+    border-radius: 10px;
+    padding:10px;
+    height: 30px;
+    width:70px;
+
+    align-items:center;
+    
+    
+    
+}
+#tec span{
+    color:black;
+}
+
+.exp li, .education li{
+    list-style:none ;
+    font-family: var(--family-text);
+    color:var(--color-text);
+    font-weight: 700;
+    
+}
+.exp, .education{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin:30px 40px 0 50px;
+
+    background-color: var(--background-card);
+    border-radius: 20px;
+    padding: 20px;
+
+    box-shadow:  3px 3px var(--shadow) ;
+    
+}
+.exp #exp1, #exp2, #exp3, #exp4{
+    width:200px;
+  
+    margin:10px 0 20px 30px;
+}
+
+.preview-projects{
+    background-color: var(--background-card);
+    width:100%;
+    border-radius: 20px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    margin:50px 0 40px ;
+
+    box-shadow:  3px 3px var(--shadow);
+
+}
+.projects #project1, #project2{
+    background-color: var(--background-card);
+    border-radius: 20px;
+    margin-right: 30px;
+    padding: 30px;
+    width: 50%;
+
+    cursor: pointer;
+
+    box-shadow:  3px 3px var(--shadow);
+}
+.projects{
+    display: flex;
+    align-items: center;
+    
+}
+
+.projects img{
+    height:20px;
+    margin:0;
+
+}
+.projects span{
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-left:20px;
+    align-items: center;
+}
+.projects p{
+    font-size: 14px;
+    margin-top:15px;
+}
+.projects #status{
+    font-size: 16px;
+    display: flex;
+    margin-top: 30px;
+
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.projects #status p{
+    margin:20px 60px 20px 20px;
+}
+.projects #status span{
+    font-size: 14px;
+}
+.projects #icon{
+    height:15px;
+    width: 15px;
+    background-color: rgb(190, 224, 77);
+    border-radius: 10px;
+
+    align-items: center;
+    margin-left: 100px;
+    border: #837E9F solid;
+
+}
+
+.feed{
+    display: flex;
+    flex-direction: column;
+
+}
+.statusPosts {
+    background-color: var(--background-card);
+    width:100%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top:20px;
+    align-items: center;
+
+    box-shadow:  3px 3px var(--shadow);
+}
+.statusPosts span{
+    font-size: 24px;
+}
+.feed img{
+    height: 150px;
+    border-radius: 80px;
+    
+}
+.posts{ 
+    width:70%;
+    height:1000px;
+}
+.feed #photo{
+    width:30%;
+}
+
+.feed #publi1, #publi2{
+    margin-top:30px;
+    background-color: var(--background-card);
+    border-radius: 20px;
+    padding:20px;
+    height:200px;
+
+    display: flex;
+    flex-direction: row;
+
+    cursor: pointer;
+    box-shadow:  3px 3px var(--shadow) ;
+
+}
+
+.feed #descriptionPubli{
+    display: flex;
+    flex-direction: column;
+}
